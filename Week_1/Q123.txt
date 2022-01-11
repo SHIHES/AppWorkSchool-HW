@@ -1,0 +1,21 @@
+Q1
+a. T, set any value for a variable is valid.
+b. F, var has already set to Int type but not float type(5.6).
+c. T, set any value for a variable is valid.
+d. F, String type cannot save null type, unless you give ? operator behind String.
+e. T, declare data type and set value are valid.
+f. F, "List<String>" declares that the data inside should be String datatype, but not "null".
+g. T, <String?> datatype can save null and String type, the data inside the list is valid.
+h. T, the structure of this statement is correct but still need to declar the function before operating 
+i. T, the structure of this statement is correct but still need to declar the function before operating 
+
+Q2
+c."Your grace.", 
+the letters, Symbols and spaces are counting for an unit length, so the total length is 39. 
+Following is the conditional statement sortiing by the message length. 
+Choose the answer within 1..39   
+
+Q3
+d. val array = Array(6) { 1000.0.pow(it) }
+Array(6) 建立6作為大小的陣列，it這邊會將陣列中的index回傳進power內
+加入for迴圈計算就會變成1000的0-5次方會依序帶入byte, KB, M
