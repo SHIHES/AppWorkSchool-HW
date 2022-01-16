@@ -1,0 +1,47 @@
+Q1:可以讓類別物件的屬性(property)以及方法(method)被其他類別物件延伸且重複使用，預設的父類(superclass)為Any。同時，Kotlin類別(class)的預設都是final，無法被繼承的，需要在class前面加入open詞綴，才能使用繼承功能。
+
+Q2: split方法中可以用單一或多個分隔條件將String隔開，也可以使用布林函數來控制是否使用條件: split(contion1, condtion2….,ignoreCase).
+fun main(args: Array<String>) {
+    var str = "I AM Xinzhuang Takeshi Kaneshiro."
+    var parts = str.split(" ", ignoreCase = true)
+    print(parts)
+}
+
+Q3: Key與Value合起來為一個pair，可以方便馬上查詢取的資料，在collection類別宣告上會使用map來定義一對pair。其中mapOf()為靜態宣告; mutableMapOF()為動態宣告.
+fun main(args: Array<String>) {
+    var mapOfAnimal = mapOf<String, Int>(
+        Pair("Cat", 2),
+        Pair("Dog", 1),
+        Pair("Fish",10),
+        Pair("Man", 2)
+    )
+    println(mapOfAnimal.values)
+    println(mapOfAnimal.keys)
+    println(mapOfAnimal.size)
+    println(mapOfAnimal.count())
+    println(mapOfAnimal["Cat"])
+}
+
+Q4:
+在儲存方式上:arraylist是存在已宣告的連續分配空間中；linkedlist則是並未宣告空間，隨機儲存位置。
+在儲存結構上:arraylist直接存取該位置的資料; linkedlist是存取資料必須從頭開始去尋找該位置的資料，因此存取效率沒有arraylist好。
+新增/刪除元素:arraylist由於事前已經宣告的儲存空間，因此新增/減少元素，都需要再次宣告新的arraylist儲存空間大小；linkedlist沒有儲存空間這個限制，相較之下彈性自有許多
+
+Q5:
+NUMBERS
+Integer types: Byte, Short, Int, Long
+Floating-points types: Float, Double
+
+BOOLEANS
+True, false
+
+CHARACTERS
+Use single quotes ‘ a ’ with a single character.
+
+STRINGS
+Use double quotes “ abc “ with multiple characters.
+
+ARRAYS
+Use arrayOf() function to create an array
+
+Q6: Int.MAX_VALUE = 2147483647, 如果超出Int範圍則就必須使用toLong()轉成long type
