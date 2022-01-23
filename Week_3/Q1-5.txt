@@ -1,0 +1,14 @@
+Q1: 藉由宣告不同權限的詞綴(EX: private, public, protected, internal…)，使物件的類別在內部(子類別/變數/方法)和外部(其他物件/非同父輩的子類別)控制成員被其他類別存取的範圍，避免其他程式錯誤引用，同時也能增加軟體的可維護性。若是要針對private的封裝做存取，必須使用getter & setter讓類別知道需要存取的資料。
+
+Q2:enum列舉也屬於類別(Class)的一種，作為如果是已知的多個常數項EX:星期、方向，在宣告上可以省去多個變數的麻煩，可以增加可讀性及減少抓錯參數的機會。
+
+Q3:
+enum class MetalColor ( val color: String) { 
+SILVER("gray"), 
+GOLD("yellow"), 
+PLATINUM("black") 
+}
+
+Q4:LinearLayout 依據parents方向的設定，而讓每個child以垂直或是水平的方式呈現，若想要同時有垂直及水平的呈現方式，就必須要設兩層的LinearLayout; RelativeLayout則是描述layout內每個View相對位置(EX:text要在按鈕的上?下?左?右?)做畫面的編排。LinearLayout再多樣方向變化的時候，寫法上需要使用巢狀結構，會使整個layout金字塔變得非常多層，導致系統效能下降，好的方式是使用RelativeLayout可以讓整體結構變得扁平方便維護和使用。
+
+Q5: ConstraintLayout 藉由parents、child、guildline來定義四個方向(上下左右)的限制，同時也加入bias, chain, ratio, guildline等功能，讓版面能有更複雜的設計方式，使用上需要將在build.gradle內匯入ConstraintLayout
