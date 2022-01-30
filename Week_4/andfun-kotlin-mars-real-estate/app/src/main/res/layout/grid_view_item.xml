@@ -45,11 +45,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/mars_type"
-            android:text="@{property.type}"/>
+            android:text="@{property.maintype}"/>
         <TextView
             android:id="@+id/mars_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@{}"/>
+            android:text="@{property.mainprice}"/>
     </LinearLayout>
 </layout>
